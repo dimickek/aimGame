@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Khula', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #16d9e3;
+  border: 1px solid #16d9e3;
+}
+
+.start {
+  font-size: 1.5rem;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(90deg, #6b93c2 0%, #98a5b4 100%);
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  transition: 0.4s;
+}
+
+.time-btn:hover {
+  border: 2px solid #16d9e3;
+  color: #16d9e3;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #16d9e3;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(118.38deg, #aec7e9 -4.6%, #5f8cbd 200.44%);
+  box-shadow: -8px -8px 20px #71859b, 10px 7px 20px #617fa0;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.board.big {
+  width: 650px;
+  height: 650px;
+}
+
+.screenThree {
+  position: relative;
+}
+
+.bonus-text {
+  position: absolute;
+  left: 100px;
+  width: 200px;
+  padding: 15px 15px;
+  font-size: 15px;
+  background: linear-gradient(118.38deg, #aec7e9 -4.6%, #5f8cbd 200.44%);
+  box-shadow: -8px -8px 20px #71859b, 10px 7px 20px #617fa0;
+  border-radius: 30px;
+  text-align: left;
+}
+
+.bonus-text h4 {
+  margin: 0;
+}
+
+.bonus-text h4 span {
+  color: rgb(38, 39, 109);
+}
+
+.circle {
+  background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.board.blue {
+  background: linear-gradient(90deg, #257ee4 0%, #0561c9 80%);
+}
+
+.board.moreBlue {
+  background: linear-gradient(90deg, #034694 0%, #0e3766 80%);
+}
